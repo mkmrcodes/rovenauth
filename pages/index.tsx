@@ -25,6 +25,7 @@ const Home: NextPage = () => {
         {session?.user && (
           <div>
             <Image
+              unoptimized={true}
               src={session.user.image as string}
               alt='user image'
               width={100}
