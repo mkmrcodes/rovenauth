@@ -1,0 +1,14 @@
+XHRGEThttp://localhost:3000/api/auth/session
+[HTTP/1.1 200 OK 27ms]
+
+
+    next-auth.session-token
+    expires	"2022-05-02T09:56:04.000Z"
+    httpOnly	true
+    path	"/"
+    samesite	"Lax"
+    value	"eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..g1_hDObxJfTF7okI.ArJM0P6YPSJ1c-5P1QuP3vwYLV9h6e0f6-xNhacRGym6wsn6pJUDpqHPvMMus9NubbXLGSwJ_i4jaRyyOX9P0H-M44iicL1n1RJDylNpyAd5U4w04kqWmoFfWbSwa9F-vxVrcUhDD9BovrSiqvMcwRppGimz0B9l7mPfiOVF72HWi3xDRsbLOVYOA-ejouRtqYV3b_BZljvd3ljEEkkbPx8oSVR06o_7dNiTXhhm5taOHEWPFFqTn0nRLiKqSQoPUWko5dYXhga_eVVNYGB60oyW_A.Fn77sjtdMlW8r0bRaBJOyQ"
+
+    next-auth.callback-url	"http://localhost:3000/"
+    next-auth.csrf-token	"fdd1c9c65b78c40a12c31d3621da7b9942f0c5705ecb7252c6c8ce3b908ecddc|fbfab1923dd41d81ef61585b0aa9a3842ed5c36cd3d0cf3d09482b8c05e0c260"
+    next-auth.session-token	"eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..-Qf2smKgGwnxScPS.HBSq6dgEq1VnvUlMS741TITF_IZXQ-D6XL1pNf4fPxI1GAaD5VaPVuq5WZHZTd4AP0uVhp5vN4R5r7c6X0GCbQcGje-Ix8a5iD_TFpUYZKP3Mnp32b2-Wy19lHptiwTdmy3Z-NqigJAi3JSyIoH6V1hcpVpiEm9BAdlFVT9lcIfJFMPsMauxxgDWv6tpCcVV99pYkkIIqIhn45qB98qLUPPe4npljw6U-_hAF6TdiWGxk68suv5nDIRV6VJMtucsZQdo3-u158IyUa8ZrGWT_ypzNg.heAwkbWpoP-EWkZsKQ1fWA"
