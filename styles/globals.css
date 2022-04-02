@@ -1,20 +1,170 @@
+@import url('typography.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@layer base {
+  html,
+  body,
+  body > div:first-child,
+  div#__next,
+  div#__next > div,
+  div#__next > div > div,
+  /* main {
+    @apply min-h-screen;
+  } */
+  body {
+    @apply subpixel-antialiased;
+  }
+  h1 {
+    @apply font-display text-4xl;
+  }
+  h2 {
+    @apply font-display text-3xl;
+  }
+  h3 {
+    @apply font-display text-2xl;
+  }
+  h4 {
+    @apply font-display text-xl;
+  }
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
+  /* Firefox */
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
 }
+@layer components {
+  #paper > p {
+    @apply indent-[5%] py-1;
+  }
+  .error {
+    @apply border-error focus:ring-error;
+  }
+  .btn {
+    @apply inline-block font-display px-8 py-3 rounded-md shadow-lg hover:-translate-y-0.5 transform transition  uppercase tracking-wider font-semibold text-sm lg:text-base xl:text-lg disabled:bg-neutral-500;
+  }
+  .btn-sm {
+    @apply inline-block font-display px-6 py-1.5 rounded-md shadow-lg hover:-translate-y-0.5 transform transition  uppercase tracking-wider font-semibold text-sm lg:text-base xl:text-lg disabled:bg-neutral-500;
+  }
+  .btn-primary {
+    @apply bg-neutral-600 hover:bg-neutral-700 active:bg-neutral-900 text-white focus:outline-none focus:ring-1 focus:ring-neutral-400 focus:ring-offset-1;
+  }
 
-* {
-  box-sizing: border-box;
+  .mychkbox {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+  .e1xekicq1 {
+    background: #fccc06 !important;
+  }
+  .menu {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 60;
+    height: 56px;
+    width: 100%;
+    color: #ccc;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.3);
+  }
+  .facebook-icon {
+    color: #000;
+    font-size: 1.5rem;
+    &:hover {
+      color: #4267b2;
+    }
+  }
+  .instagram-icon {
+    color: #000;
+    font-size: 1.5rem;
+    &:hover {
+      color: #cd015f;
+    }
+  }
+  .twitter-icon {
+    color: #000;
+    font-size: 1.5rem;
+    &:hover {
+      color: #1da1f2;
+    }
+  }
+  .youtube-icon {
+    color: #000;
+    font-size: 1.5rem;
+    &:hover {
+      color: #ff0000;
+    }
+  }
+  .pinterest-icon {
+    color: #000;
+    font-size: 1.5rem;
+    &:hover {
+      color: #e60023;
+    }
+  }
+  .card-loading {
+    position: relative;
+    height: 0;
+    padding-top: 150%;
+    background-image: url('../public/images/cardloader.gif');
+    background-position: center center;
+    background-size: 100%;
+  }
+  .button-animation:hover {
+    transition: background-color 0.3s ease;
+  }
+  .button-success-animation {
+    animation: MoveUp 1s;
+    animation: MoveDown 3s;
+  }
+
+  @keyframes MoveUp {
+    0% {
+      transform: translate3d(0, 0, 0);
+      opacity: 0;
+    }
+    100% {
+      transform: translate3d(0, -35px, 0);
+      opacity: 1;
+      z-index: 2;
+    }
+  }
+  @keyframes MoveDown {
+    0% {
+      transform: translate3d(0, -35px, 0);
+      opacity: 1;
+    }
+    90% {
+      transform: translate3d(0, -35px, 0);
+      opacity: 1;
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+      z-index: 0;
+      opacity: 0;
+    }
+  }
+}
+@layer utilities {
+  .animated-underline {
+    background-image: linear-gradient(#33333300, #33333300),
+      linear-gradient(to right, #fdd638, #caa305);
+    background-size: 100% 5px, 0 5px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease;
+  }
+  .animated-underline:hover,
+  .animated-underline:focus {
+    background-size: 0 5px, 100% 5px;
+  }
 }
